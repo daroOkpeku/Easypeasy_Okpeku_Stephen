@@ -1,4 +1,5 @@
 Question One
+
 php artisan job:run "App\Console\Jobs\JobRunner" "myMethod" '["param1","param2"]'
 run this code on your terminal for question 
 i created the helper file registered it composer.json and run composer dump-autoload
