@@ -23,3 +23,10 @@ i added this to my logging.php
 
 
 Question Two
+
+please run php artisan migrate 
+
+next step run php artisan db:seed --class=InsertDataIntoJob 
+
+after run php artisan serve
+
