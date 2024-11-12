@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FetchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::controller(FetchController::class)->group(function(){
+Route::get("/fetchall", "fetchall");
+Route::get("/", "dashboard");
 });
